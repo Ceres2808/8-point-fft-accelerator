@@ -1,8 +1,16 @@
-# 8-Point FFT Accelerator Simulation
+# 8-Point FFT Accelerator (Verilog)
 
-This project demonstrates an **8-point Fast Fourier Transform (FFT) accelerator** implemented and simulated using **Icarus Verilog**.
+A pipelined, fully verified 8-point complex FFT accelerator in Verilog, suitable for FPGA/ASIC and digital signal processing applications.
+
+## Features
+- Full 8-point radix-2 DIT FFT (complex inputs & outputs)
+- 16-bit input, 32-bit output (Q16.16 fixed-point)
+- Twiddle factor multiplication (hardware, Q1.15)
+- 5-stage pipeline with start/valid handshaking
+- Comprehensive testbench with NumPy reference checks
 
 ## Project Structure
+\fft8_test
 - [**fft8.v**](fft8_test/fft8.v): Verilog source code for the 8-point FFT module.
 - [**fft8_tb.v**](fft8_test/fft8_tb.v): Testbench for simulating the FFT module.
 - [**fft8_test**](fft8_test/fft8_test): Output or log file from the simulation.
@@ -31,16 +39,17 @@ vvp fft8_test
 gtkwave test.vcd
 ```
 
+## Results
 
-## Output
+- Accuracy: Matches NumPy FFT for all test cases (real, complex, zero input)
+- Latency: 5 cycles per FFT
+- Verified: Testbench compares hardware output to NumPy reference
 
-- The simulation produces a VCD file ([`test.vcd`](fft8_test/test.vcd)) for waveform inspection.
-- The [`plots.png`](fft8_test/plots.png) file provides a visual summary of the FFT results.
-
+Example plot:
 ![FFT Output Plot](fft8_test/plots.png)
 
+- Modify test vectors in fft8_tb.v for your own input.
+- Outputs are in Q16.16 format.
+- Use gtkwave to view signals and debug.
 
-## Notes
-
-- The design and testbench are modular and easy to modify for different FFT sizes.
-- For further analysis, inspect the VCD file or refer to the generated plots.
+**For details, see comments in the source code. If this project helps you, please star the repo!**
