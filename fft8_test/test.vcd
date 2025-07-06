@@ -1,0 +1,235 @@
+$date
+	Sun Jul 06 12:56:06 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module fft8_tb $end
+$var wire 16 ! X7 [15:0] $end
+$var wire 16 " X6 [15:0] $end
+$var wire 16 # X5 [15:0] $end
+$var wire 16 $ X4 [15:0] $end
+$var wire 16 % X3 [15:0] $end
+$var wire 16 & X2 [15:0] $end
+$var wire 16 ' X1 [15:0] $end
+$var wire 16 ( X0 [15:0] $end
+$var reg 1 ) clk $end
+$var reg 1 * rst $end
+$var reg 8 + x0 [7:0] $end
+$var reg 8 , x1 [7:0] $end
+$var reg 8 - x2 [7:0] $end
+$var reg 8 . x3 [7:0] $end
+$var reg 8 / x4 [7:0] $end
+$var reg 8 0 x5 [7:0] $end
+$var reg 8 1 x6 [7:0] $end
+$var reg 8 2 x7 [7:0] $end
+$scope module uut $end
+$var wire 1 ) clk $end
+$var wire 1 * rst $end
+$var wire 8 3 x0 [7:0] $end
+$var wire 8 4 x1 [7:0] $end
+$var wire 8 5 x2 [7:0] $end
+$var wire 8 6 x3 [7:0] $end
+$var wire 8 7 x4 [7:0] $end
+$var wire 8 8 x5 [7:0] $end
+$var wire 8 9 x6 [7:0] $end
+$var wire 8 : x7 [7:0] $end
+$var reg 16 ; X0 [15:0] $end
+$var reg 16 < X1 [15:0] $end
+$var reg 16 = X2 [15:0] $end
+$var reg 16 > X3 [15:0] $end
+$var reg 16 ? X4 [15:0] $end
+$var reg 16 @ X5 [15:0] $end
+$var reg 16 A X6 [15:0] $end
+$var reg 16 B X7 [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+b1000 :
+b111 9
+b110 8
+b101 7
+b100 6
+b11 5
+b10 4
+b1 3
+b1000 2
+b111 1
+b110 0
+b101 /
+b100 .
+b11 -
+b10 ,
+b1 +
+1*
+0)
+b0 (
+b0 '
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#5000
+1)
+#10000
+0)
+#15000
+1)
+#20000
+0)
+0*
+#25000
+bx !
+bx B
+bx %
+bx >
+bx #
+bx @
+bx '
+bx <
+bx "
+bx A
+bx &
+bx =
+bx $
+bx ?
+bx (
+bx ;
+1)
+#30000
+0)
+#35000
+1)
+#40000
+0)
+#45000
+b0 !
+b0 B
+b0 %
+b0 >
+b0 #
+b0 @
+b11111110000 '
+b11111110000 <
+b0 "
+b0 A
+b11111111000 &
+b11111111000 =
+b1111111111111100 $
+b1111111111111100 ?
+b100100 (
+b100100 ;
+1)
+#50000
+0)
+#55000
+1)
+#60000
+0)
+#65000
+1)
+#70000
+0)
+#75000
+1)
+#80000
+0)
+#85000
+1)
+#90000
+0)
+#95000
+1)
+#100000
+0)
+#105000
+1)
+#110000
+0)
+#115000
+1)
+#120000
+0)
+b1010000 2
+b1010000 :
+b1000110 1
+b1000110 9
+b111100 0
+b111100 8
+b110010 /
+b110010 7
+b101000 .
+b101000 6
+b11110 -
+b11110 5
+b10100 ,
+b10100 4
+b1010 +
+b1010 3
+#125000
+1)
+#130000
+0)
+#135000
+1)
+#140000
+0)
+#145000
+b11101100000 '
+b11101100000 <
+b11110110000 &
+b11110110000 =
+b1111111111011000 $
+b1111111111011000 ?
+b101101000 (
+b101101000 ;
+1)
+#150000
+0)
+#155000
+1)
+#160000
+0)
+#165000
+1)
+#170000
+0)
+#175000
+1)
+#180000
+0)
+#185000
+1)
+#190000
+0)
+#195000
+1)
+#200000
+0)
+#205000
+1)
+#210000
+0)
+#215000
+1)
+#220000
+0)
